@@ -6,9 +6,8 @@ a:visited {color: #000000;}
 a:hover {color: #FFE946 ;background-color: transparent;}
 h1{color:#E6DF3A}
 img{width: 33%;}
-body > nav {background-color: orange;}
-nav a:hover {background-color: blue;}
+body > nav {background-color: #FFA500;}
+nav a:hover {background-color: #0000FF;}
 nav {padding: 10px}
 nav {margin-bottom: 30px}
 nav {width: 140px;}
-nav{align-self: center;}
