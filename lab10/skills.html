@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Unit 8 Flex</title>
+        <meta charset="UTF-8">
+        <style>
+            body {background-color: white;}
+            .row1, .row2{ display: flex; flex-wrap: wrap;}
+            .row1 div{flex: 1;width:80%}
+            .row2{width:20%; }
+            .row2 div{flex: 1;background-color: rgb(0, 98, 255);border-radius: 35px;padding: 15px; }
+            .img1{flex: 2;}
+            img{width: 115px; height:115px; ; }
+            .center {display: block;margin-left: auto;margin-right: auto; padding: 50px}
+            .images{flex: 2;}
+            .big_box{display: flex; flex-wrap: wrap; width:auto;}
+            .row2{text-align: left;}
+            h1{text-align: center;}
+            h3{color: white;}
+            .qwert{color: white;}
+            .nav{background-color: rgb(0, 98, 255); padding: 10px;} 
+            .navlink{color: white;}
+            .nav-item>a:hover {color: red;}
+
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <nav class="nav-item">
+            <a class="navlink" href="index.html">Home</a> |
+            <a class="navlink" href="contact_css.html">Contact</a> |
+            <a class="navlink" href="skills.html">Skills</a> |
+          </nav>
+        </div>
+        <h1>Technical skills</h1>
+        <p><strong>My carreer has been focused on learning a vast array of technical skills from an IT oriented aproach to a more hands-on practical aproach. I have been working towards becoming a more well rounded professional. Below are my core skills:</strong></p>
+    <div class="big_box">
+        <div class='row1'> <!-- the row for the flexbox-->
+            <div class="img1"><img src="./images/html.png" class="center" alt="html"></div>
+            <div class="images"><img src="./images/python.png.png" class="center" alt="python"></div>
+            <div class="images"><img src="./images/sql.png" class="center" alt="sql"></div>
+            <div class="images"><img src="./images/c.png" class="center" alt="c"></div>
+            <div class="images"><img src="./images/r.png" class="center" alt="r"></div>
+        </div>
+        <div class="row2">
+            <div><h3> Other skills</h3>
+                <p class="qwert">
+                    Solidworks <br>
+                    Automotive repair <br>
+                    Microsoft Office <br>
+                    Adobe Illustrator <br>
+                    Photoshop <br>
+                </p>
+            </div>
+            
+        </div>
+
+
+     </div>
+
+
+    
+
+
+ 
+</footer>
+    </body>
+</html>
