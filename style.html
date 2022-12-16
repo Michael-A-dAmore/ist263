@@ -1,24 +1,39 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #333333;
-  }
-  
-  header {
-    text-align: center;
-    background-color: #f5f5f5;
-    padding: 20px;
-  }
-  
-  h1, h2 {
-    color: #c10000;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    background-color: #333333;
-    padding: 0;
-    margin: 0;
-  }
-  
+
+  <script>
+    // When user submits form, get the input values and save the order
+    var form = document.getElementById("order-form");
+    form.onsubmit = function() {
+      var name = form.elements["name"].value;
+      var number = form.elements["number"].value;
+      var orderItem = form.elements["order-item"].value;
+      var price = form.elements["price"].value;
+      var quantity = form.elements["quantity"].value;
+      var comments = form.elements["comments"].value;
+
+      saveOrder(name, number, orderItem, price, quantity, comments);
+    }
+  </script>
+
+
+<h2>Order Form</h2>
+<form id="order-form">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="number">Phone Number:</label><br>
+  <input type="text" id="number" name="number"><br>
+
+  <label for="order-item">Order Item:</label><br>
+  <input type="text" id="order-item" name="order-item"><br>
+
+  <label for="price">Price:</label><br>
+  <input type="number" id="price" name="price"><br>
+
+  <label for="quantity">Quantity:</label><br>
+  <input type="number" id="quantity" name="quantity"><br>
+
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form> 

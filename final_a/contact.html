@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="contact.css">
+  <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "33%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+</head>
+<body>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../final_a/index.html">Home</a>
+    <a href="../final_a/contact.html">Contact</a>
+    <a href="../final_a/about.html">About</a>
+    <a href="../final_a/catering.html">Catering</a>
+    <a href="../final_a/menu.html">Menu</a>
+  </div>
+    <h1>Our Contact</h1>
+    <div class='div' style="display: flex; justify-content: space-between;">
+        <div>
+            <h2>Our Hours:</h2>
+                <table style="width:100%">
+                    <tr>
+                      <th>Days</th>
+                      <th>Hours</th>
+                    </tr>
+                    <tr>
+                      <td>Tuesdays-Wednesdays</td>
+                      <td>10:00am-2:00pm</td>
+                  
+                    </tr>
+                    <tr>
+                      <td>Thursdays-Saturdays</td>
+                      <td>11:00am-8:00pm</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sundays-Mondays</td>
+                      <td>Closed</td>
+                  </table>
+
+        </div>
+        <div class="maps">
+            <h2>Our location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8778.467303436693!2d-76.14261912243245!3d43.04793454498443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3077710ca07%3A0x686146e09778351f!2sAngotti&#39;s%20%7C%20Family%20Restaurant!5e0!3m2!1sen!2sus!4v1671063016483!5m2!1sen!2sus" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <h2> Leave a review</h2>
+            <p>Please leave a review. It really helps us grow!</p>
+            <div class="review-form">
+                <form>
+                  <label for="name">Name:</label><br>
+                  <input type="text" id="name" name="name"><br>
+                  <label for="review">Review:</label><br>
+                  <textarea id="review" name="review" rows="5" cols="40"></textarea><br><br>
+                  <input type="submit" value="Submit Review">
+                </form>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

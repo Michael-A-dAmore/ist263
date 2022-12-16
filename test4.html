@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    .menu-item {
+      width: 30%;
+      margin: 10px 0;
+      text-align: center;
+      border: 1px solid gray;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .menu-item img {
+      width: 80%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+    }
+    .menu-item h3 {
+      margin: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .menu-item p {
+      margin: 10px;
+      font-size: 14px;
+      color: gray;
+    }
+    .menu-item .price {
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: tomato;
+    }
+    .menu-item button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: tomato;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .menu-item button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="menu-item" data-name="Margherita Pizza" data-price="15">
+      <img src="margherita.jpg" alt="Margherita Pizza">
+      <h3>Margherita Pizza</h3>
+      <p>Tomato sauce, mozzarella, basil</p>
+      <div class="price">$15</div>
+      <button>Add to Order</button>
+    </div>
+    <div class="menu-item" data-name="Pepperoni Pizza" data-price="18">
+      <img src="pepperoni.jpg" alt="Pepperoni Pizza">
+      <h3>Pepperoni Pizza</h3>
+      <p>Tomato sauce, mozzarella, pepperoni</p>
+      <div class="price">$18</div>
+      <button>Add to Order</button>
+    </div>
+    <div class="menu-item" data-name="BBQ Chicken Pizza" data-price="20">
+      <img src="bbq-chicken.jpg" alt="BBQ Chicken Pizza">
+      <h3>BBQ Chicken Pizza</h3>
+      <p>BBQ sauce, mozzarella, chicken, red onions, cilantro</p>
+      <div class="price">$20</div>
+      <button>Add to Order</button>
+    </div>
+    <div class="menu-item" data-name="Lasagna" data-price="15">
+      <img src="lasagna.jpg" alt="Lasagna">
+      <h3>Lasagna</h3>
+      <p>Layers of pasta, meat sauce, and cheese</p>
+      <div class="price">$15</div>
+      <button>Add to Order</button>
+    </div>
+    <div class="menu-item" data-name="Fettuccine Alfredo" data-price="12">
+      <img src="fettuccine-alfredo.jpg" alt="Fettuccine Alfredo">
+      <h3>Fettuccine Alfredo</h3>
+      <p>Fettuccine noodles, creamy Alfredo sauce</p>
+      <div class="price">$12</div>
+      <button>Add to Order</button>
+    </div>
+    <div class="menu-item" data-name="Caprese Salad" data-price="10">
+      <img src="caprese-salad.jpg" alt="Caprese Salad">
+      <h3>CapreseSalad</h3>
+      <p>Tomatoes, mozzarella, basil, balsamic vinegar</p>
+      <div class="price">$10</div>
+      <button>Add to Order</button>
+    </div>
+    <div class="menu-item" data-name="Spaghetti Bolognese" data-price="14">
+      <img src="spaghetti-bolognese.jpg" alt="Spaghetti Bolognese">
+      <h3>Spaghetti Bolognese</h3>
+      <p>Spaghetti noodles, meat sauce</p>
+      <div class="price">$14</div>
+      <button>Add to Order</button>
+    </div>
+    <div class="menu-item" data-name="Gelato" data-price="5">
+      <img src="gelato.jpg" alt="Gelato">
+      <h3>Gelato</h3>
+      <p>Assorted flavors of Italian ice cream</p>
+      <div class="price">$5</div>
+      <button>Add to Order</button>
+    </div>
+  </div>
+  <script>
+    const menuItems = document.querySelectorAll('.menu-item');
+    let order = [];
+    let total = 0;
+    menuItems.forEach(menuItem => {
+      menuItem.addEventListener('click', event => {
+        const name = menuItem.getAttribute('data-name');
+        const price = parseInt(menuItem.getAttribute('data-price'));
+        order.push({ name, price });
+        total += price;
+        console.log(order, total);
+      });
+    });
+  </script>
+</body>
+</html>
+
+

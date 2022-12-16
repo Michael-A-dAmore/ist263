@@ -1,0 +1,72 @@
+body{
+    font-family: 'Open Sans', sans-serif;  
+}
+.section {
+  text-align:center;
+  font-size: 3em;
+  color: black;
+}
+.section img{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 15%), 0 1px 4px rgb(0 0 0 / 15%), 0 1px 0 rgb(0 0 0 / 7%);
+}
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span{
+  background: white;
+}
+h1{
+  margin: 0 0 20px 0;
+}
+@media screen and (max-width: 700px) {
+  h1{
+    font-size: 2em;
+  }
+  .section{
+    font-size: 1.5em;
+  }
+  .section img{
+    width: 100px;
+    height: 100px;
+  }
+}
+body{background: linear-gradient(90deg, #009246 0%, #009246 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%, #CE2B37 100%);}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #009246;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #ffffff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
